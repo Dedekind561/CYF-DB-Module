@@ -624,7 +624,7 @@ npm install --save pg
 
 Create a `server.js` file, import express, initialise the server and start listening for requests:
 
-```
+```js
 const express = require("express");
 const app = express();
 
@@ -635,7 +635,7 @@ app.listen(3000, function() {
 
 Import pg library and create a new GET endpoint to load the list of customers:
 
-```
+```js
 const { Pool } = require('pg');
 
 const db = new Pool({
